@@ -85,108 +85,115 @@
     /* ========================================================== */
     @media (min-width: 1024px) and (max-height: 880px) {
       .page-wrapper {
-        padding-top: 0.75rem !important;
-        padding-bottom: 1rem !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.75rem !important;
       }
       .brand-header {
-        padding-bottom: 0.65rem !important;
-        margin-bottom: 0.85rem !important;
+        padding-bottom: 0.5rem !important;
+        margin-bottom: 0.75rem !important;
       }
       .brand-logo-img {
-        height: 1.85rem !important;
+        height: 1.75rem !important;
       }
       .pricing-grid {
-        gap: 1.25rem !important;
-        margin-bottom: 1.5rem !important;
+        gap: 1.15rem !important;
+        margin-bottom: 1.25rem !important;
       }
       .card-box {
-        padding: 1.2rem 1.4rem !important;
+        padding: 1.1rem 1.35rem !important;
       }
       .card-title {
         font-size: 1.35rem !important;
-        margin-bottom: 0.2rem !important;
+        margin-bottom: 0.15rem !important;
       }
       .card-desc {
-        font-size: 0.8125rem !important;
-        line-height: 1.3 !important;
-        margin-bottom: 0.65rem !important;
+        font-size: 0.8rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 0.5rem !important;
       }
       .price-box {
-        margin-bottom: 0.65rem !important;
-        padding-bottom: 0.5rem !important;
-        padding-top: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+        padding-bottom: 0.45rem !important;
+        padding-top: 0.45rem !important;
       }
       .price-value {
         font-size: 2.15rem !important;
       }
       .card-cta {
-        padding-top: 0.6rem !important;
-        padding-bottom: 0.6rem !important;
-        margin-bottom: 0.65rem !important;
+        padding-top: 0.55rem !important;
+        padding-bottom: 0.55rem !important;
+        margin-bottom: 0.55rem !important;
         font-size: 0.875rem !important;
       }
       .inclusions-head {
-        margin-bottom: 0.4rem !important;
+        margin-bottom: 0.35rem !important;
       }
       .inclusions-list {
-        row-gap: 0.35rem !important;
+        row-gap: 0.3rem !important;
       }
       .inclusions-list li {
         font-size: 0.8125rem !important;
       }
+      .item-subtext {
+        font-size: 0.725rem !important;
+        line-height: 1.2 !important;
+      }
       .card-foot {
-        margin-top: 0.6rem !important;
-        padding-top: 0.45rem !important;
+        margin-top: 0.5rem !important;
+        padding-top: 0.4rem !important;
       }
     }
 
     @media (min-width: 1024px) and (max-height: 750px) {
       .page-wrapper {
-        padding-top: 0.5rem !important;
+        padding-top: 0.35rem !important;
       }
       .brand-header {
-        padding-bottom: 0.45rem !important;
-        margin-bottom: 0.6rem !important;
+        padding-bottom: 0.35rem !important;
+        margin-bottom: 0.5rem !important;
       }
       .brand-logo-img {
-        height: 1.65rem !important;
+        height: 1.5rem !important;
       }
       .pricing-grid {
-        gap: 1rem !important;
-        margin-bottom: 1.2rem !important;
+        gap: 0.85rem !important;
+        margin-bottom: 1rem !important;
       }
       .card-box {
-        padding: 1rem 1.15rem !important;
+        padding: 0.85rem 1.1rem !important;
       }
       .card-title {
         font-size: 1.2rem !important;
       }
       .card-desc {
-        font-size: 0.775rem !important;
-        margin-bottom: 0.5rem !important;
+        font-size: 0.75rem !important;
+        margin-bottom: 0.35rem !important;
       }
       .price-box {
-        margin-bottom: 0.5rem !important;
-        padding-bottom: 0.4rem !important;
-        padding-top: 0.4rem !important;
+        margin-bottom: 0.4rem !important;
+        padding-bottom: 0.35rem !important;
+        padding-top: 0.35rem !important;
       }
       .price-value {
         font-size: 1.85rem !important;
       }
       .card-cta {
-        padding-top: 0.5rem !important;
-        padding-bottom: 0.5rem !important;
-        margin-bottom: 0.5rem !important;
+        padding-top: 0.45rem !important;
+        padding-bottom: 0.45rem !important;
+        margin-bottom: 0.45rem !important;
       }
       .inclusions-list li {
         font-size: 0.775rem !important;
       }
+      .item-subtext {
+        display: none !important;
+      }
       .inclusions-list {
-        row-gap: 0.25rem !important;
+        row-gap: 0.2rem !important;
       }
       .card-foot {
-        margin-top: 0.45rem !important;
-        padding-top: 0.35rem !important;
+        margin-top: 0.35rem !important;
+        padding-top: 0.3rem !important;
       }
     }
   </style>
@@ -273,7 +280,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </span>
-                <span>Social media</span>
+                <div class="flex-1">
+                  <span class="font-semibold text-slate-900">Social media</span>
+                  <p class="item-subtext text-[11px] text-slate-500 font-normal leading-tight">Posicionamento, copy estratégica, design de autoridade & roteiros</p>
+                </div>
               </li>
 
               <!-- Item 2: Tráfego pago -->
@@ -283,7 +293,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </span>
-                <span>Tráfego pago</span>
+                <div class="flex-1">
+                  <span class="font-semibold text-slate-900">Tráfego pago</span>
+                  <p class="item-subtext text-[11px] text-slate-500 font-normal leading-tight">Gestão Meta Ads, testes multivariados de criativos & escala de ROI</p>
+                </div>
               </li>
 
               <!-- Item 3: Implementação de CRM -->
@@ -293,7 +306,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </span>
-                <span>Implementação de CRM</span>
+                <div class="flex-1">
+                  <span class="font-semibold text-slate-900">Implementação de CRM</span>
+                  <p class="item-subtext text-[11px] text-slate-500 font-normal leading-tight">Mapeamento de pipeline, gatilhos de automação & regras de passagem</p>
+                </div>
               </li>
 
               <!-- Item 4: Mensalidade do dot.Sales -->
@@ -303,7 +319,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </span>
-                <span>Mensalidade do dot.Sales</span>
+                <div class="flex-1">
+                  <span class="font-semibold text-slate-900">Mensalidade do dot.Sales</span>
+                  <p class="item-subtext text-[11px] text-slate-500 font-normal leading-tight">Licença completa da tecnologia inclusa sem custos adicionais de setup</p>
+                </div>
               </li>
 
               <!-- Item 5: Acompanhamento dos dados em tempo real -->
@@ -313,7 +332,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </span>
-                <span>Acompanhamento dos dados em tempo real</span>
+                <div class="flex-1">
+                  <span class="font-semibold text-slate-900">Acompanhamento dos dados em tempo real</span>
+                  <p class="item-subtext text-[11px] text-slate-500 font-normal leading-tight">Dashboards ao vivo de CAC, CPL, taxas de conversão & relatórios</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -322,7 +344,7 @@
         <!-- Footer do Card -->
         <div class="card-foot mt-4 sm:mt-5 pt-2.5 sm:pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
           <span>Onboarding guiado</span>
-          <span>Suporte ativo</span>
+          <span>Suporte ativo via canal direto</span>
         </div>
 
       </div>
@@ -408,7 +430,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </span>
-                <span>Social media</span>
+                <div class="flex-1">
+                  <span class="font-bold text-dark-main">Social media</span>
+                  <p class="item-subtext text-[11px] text-slate-600 font-normal leading-tight">Posicionamento premium, narrativas de vendas, design de alto impacto & copy</p>
+                </div>
               </li>
 
               <!-- Item 2: Tráfego pago -->
@@ -418,7 +443,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </span>
-                <span>Tráfego pago</span>
+                <div class="flex-1">
+                  <span class="font-bold text-dark-main">Tráfego pago</span>
+                  <p class="item-subtext text-[11px] text-slate-600 font-normal leading-tight">Gestão de alta performance no Meta Ads, escala acelerada & testes contínuos</p>
+                </div>
               </li>
 
               <!-- Item 3: Comercial interno (Diferencial Premium) -->
@@ -428,9 +456,12 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </span>
-                <div class="flex-1 flex items-center justify-between">
-                  <span>Comercial interno</span>
-                  <span class="text-[9px] sm:text-[10px] uppercase font-extrabold tracking-wider bg-dark-main text-white px-1.5 py-0.5 rounded">Diferencial</span>
+                <div class="flex-1">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-dark-main">Comercial interno</span>
+                    <span class="text-[9px] sm:text-[10px] uppercase font-extrabold tracking-wider bg-dark-main text-white px-1.5 py-0.5 rounded">Diferencial</span>
+                  </div>
+                  <p class="item-subtext text-[11px] text-slate-700 font-medium leading-tight">Estrutura ativa com SDR/Closer dedicado, resposta ultra veloz & fechamento</p>
                 </div>
               </li>
 
@@ -441,7 +472,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </span>
-                <span>Implementação de CRM</span>
+                <div class="flex-1">
+                  <span class="font-bold text-dark-main">Implementação de CRM</span>
+                  <p class="item-subtext text-[11px] text-slate-600 font-normal leading-tight">Arquitetura avançada de pipeline, esteira de cadência, automações & SLAs</p>
+                </div>
               </li>
 
               <!-- Item 5: Mensalidade do dot.Sales -->
@@ -451,7 +485,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </span>
-                <span>Mensalidade do dot.Sales</span>
+                <div class="flex-1">
+                  <span class="font-bold text-dark-main">Mensalidade do dot.Sales</span>
+                  <p class="item-subtext text-[11px] text-slate-600 font-normal leading-tight">Acesso ilimitado, canais integrados, WhatsApp corporativo & zero taxa oculta</p>
+                </div>
               </li>
 
               <!-- Item 6: Acompanhamento dos dados em tempo real -->
@@ -461,7 +498,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
                 </span>
-                <span>Acompanhamento dos dados em tempo real</span>
+                <div class="flex-1">
+                  <span class="font-bold text-dark-main">Acompanhamento dos dados em tempo real</span>
+                  <p class="item-subtext text-[11px] text-slate-600 font-normal leading-tight">Painel de BI executivo, CAC, LTV, taxa de passagem por etapa & reuniões quinzenais</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -472,7 +512,7 @@
           <span class="flex items-center gap-1.5">
             <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Prioridade máxima de escala
           </span>
-          <span class="text-dark-main font-semibold">Equipe dedicada</span>
+          <span class="text-dark-main font-semibold">Equipe dedicada full-time</span>
         </div>
 
       </div>
@@ -490,17 +530,17 @@
       <div class="mb-8 sm:mb-10 text-center sm:text-left">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 shadow-2xs text-xs font-bold uppercase tracking-wider text-slate-800 mb-3">
           <span class="w-2 h-2 rounded-full bg-lime-brand"></span>
-          Detalhamento do Escopo
+          Detalhamento Completo do Escopo
         </div>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-dark-main tracking-tight leading-tight">
-          O que cada serviço entrega para sua operação
+          O que cada frente entrega com profundidade técnica
         </h2>
         <p class="text-sm sm:text-base text-slate-500 mt-2 max-w-2xl leading-relaxed">
-          Entenda a função e o impacto prático de cada frente na atração, estruturação e conversão de clientes para a sua empresa.
+          Nossa atuação combina engenharia de processos, inteligência comercial ativa e marketing de resposta direta para estruturar e acelerar sua máquina de vendas.
         </p>
       </div>
 
-      <!-- Grid com os 6 Serviços na Nova Ordem -->
+      <!-- Grid com os 6 Serviços com Entregáveis Robustos -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-stretch">
 
         <!-- 1. Social media -->
@@ -518,18 +558,43 @@
               </span>
             </div>
 
-            <h3 class="text-lg font-extrabold text-dark-main tracking-tight mb-2">
+            <h3 class="text-lg font-extrabold text-dark-main tracking-tight mb-1">
               Social media
             </h3>
+            <p class="text-xs font-semibold text-lime-600 mb-2">Posicionamento de Autoridade & Comunicação Comercial</p>
 
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Posicionamento e gestão da presença digital da marca nas redes sociais. Alinhamento de narrativas de conteúdo com o momento de compra dos clientes, fortalecimento de credibilidade e engajamento para amplificar os resultados de tráfego.
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Desenvolvimento de presença digital dominante. Não fazemos postagens genéricas: alinhamos o posicionamento estético e a narrativa de conteúdo diretamente aos gatilhos de compra do seu cliente ideal.
             </p>
+
+            <!-- Checklist Detalhada de Entregáveis -->
+            <div class="bg-slate-50/80 rounded-xl p-3 border border-slate-200/60 mb-4">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 block mb-2">Entregáveis específicos inclusos:</span>
+              <ul class="space-y-1.5 text-xs text-slate-700">
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Linha editorial estratégica voltada à geração de demanda</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Criação de copies persuasivas e artes visuais de alto impacto</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Roteirização e direcionamento de vídeos curtos (Reels)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Sincronização contínua com as campanhas de tráfego pago</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="mt-5 pt-3.5 border-t border-slate-100 flex flex-wrap gap-1.5 text-xs font-semibold text-slate-500">
-            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Autoridade de marca</span>
-            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Conteúdo estratégico</span>
+          <div class="mt-2 pt-3 border-t border-slate-100 flex flex-wrap gap-1.5 text-xs font-semibold text-slate-500">
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Branding vendedor</span>
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Copywriting persuasivo</span>
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Design institucional</span>
           </div>
         </div>
 
@@ -550,18 +615,43 @@
               </span>
             </div>
 
-            <h3 class="text-lg font-extrabold text-dark-main tracking-tight mb-2">
+            <h3 class="text-lg font-extrabold text-dark-main tracking-tight mb-1">
               Tráfego pago
             </h3>
+            <p class="text-xs font-semibold text-lime-600 mb-2">Aquisição de Clientes & Otimização de ROI</p>
 
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Gestão e otimização contínua de anúncios patrocinados no ecossistema Facebook e Instagram Ads (Meta). Criação de públicos compradores, testes dinâmicos de criativos e direcionamento de leads qualificados diretamente para a sua equipe de atendimento.
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Arquitetura de mídia paga em Meta Ads (Instagram & Facebook) focada na captação previsível de contatos com alta intenção comercial, blindando suas contas e reduzindo o CPL e CAC de forma consistente.
             </p>
+
+            <!-- Checklist Detalhada de Entregáveis -->
+            <div class="bg-slate-50/80 rounded-xl p-3 border border-slate-200/60 mb-4">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 block mb-2">Entregáveis específicos inclusos:</span>
+              <ul class="space-y-1.5 text-xs text-slate-700">
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Setup técnico de Business Manager, Domínio, Pixels e API de Conversões</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Segmentação avançada: públicos frios, lookalike e remarketing dinâmico</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Testes A/B semanais de novos criativos, ângulos e propostas</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Otimização diária de lances, orçamentos e distribuição por canal</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="mt-5 pt-3.5 border-t border-slate-100 flex flex-wrap gap-1.5 text-xs font-semibold text-slate-500">
-            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Segmentação precisa</span>
-            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Escala de ROI</span>
+          <div class="mt-2 pt-3 border-t border-slate-100 flex flex-wrap gap-1.5 text-xs font-semibold text-slate-500">
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Meta Ads certificado</span>
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Testes A/B contínuos</span>
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Escala com segurança</span>
           </div>
         </div>
 
@@ -582,18 +672,43 @@
               </span>
             </div>
 
-            <h3 class="text-lg font-extrabold text-dark-main tracking-tight mb-2 flex items-center justify-between">
+            <h3 class="text-lg font-extrabold text-dark-main tracking-tight mb-1 flex items-center justify-between">
               <span>Comercial interno</span>
             </h3>
+            <p class="text-xs font-semibold text-slate-800 mb-2">Estrutura Ativa de SDR & Closer Dedicado</p>
 
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Estrutura ativa e acompanhamento comercial dedicado para abordar, qualificar e fechar os leads gerados. Aplicação de roteiros validados (scripts), follow-up com alta velocidade de contato e foco na maximização da conversão em faturamento.
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Não basta gerar o lead: nossa equipe interna assume o front de atendimento com resposta veloz, aplicando técnicas validadas de qualificação profunda, quebra de objeções e condução até o fechamento.
             </p>
+
+            <!-- Checklist Detalhada de Entregáveis -->
+            <div class="bg-lime-brand/10 rounded-xl p-3 border border-lime-brand/30 mb-4">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-dark-main block mb-2">Entregáveis específicos inclusos:</span>
+              <ul class="space-y-1.5 text-xs text-slate-800 font-medium">
+                <li class="flex items-start gap-2">
+                  <span class="text-dark-main font-bold shrink-0">✓</span>
+                  <span>Operação com tempo de resposta recorde (speed-to-lead &lt; 5 min)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-dark-main font-bold shrink-0">✓</span>
+                  <span>Roteiros (scripts) proprietários de qualificação e contorno de objeções</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-dark-main font-bold shrink-0">✓</span>
+                  <span>Cadência ativa de follow-up multicanal (WhatsApp, ligações e e-mails)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-dark-main font-bold shrink-0">✓</span>
+                  <span>Reengajamento de contatos frios e reativação da base histórica de clientes</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="mt-5 pt-3.5 border-t border-slate-100 flex flex-wrap gap-1.5 text-xs font-semibold text-slate-700">
+          <div class="mt-2 pt-3 border-t border-slate-100 flex flex-wrap gap-1.5 text-xs font-semibold text-slate-700">
             <span class="bg-lime-brand/20 px-2.5 py-0.5 rounded-lg border border-lime-brand/50 text-black font-bold text-[11px]">Fechamento ativo</span>
             <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Follow-up ágil</span>
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Treinamento de scripts</span>
           </div>
         </div>
 
@@ -612,18 +727,43 @@
               </span>
             </div>
 
-            <h3 class="text-lg font-extrabold text-dark-main tracking-tight mb-2">
+            <h3 class="text-lg font-extrabold text-dark-main tracking-tight mb-1">
               Implementação de CRM
             </h3>
+            <p class="text-xs font-semibold text-lime-600 mb-2">Engenharia de Processos & Automações de Vendas</p>
 
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Organização arquitetada de todo o pipeline de vendas. Definição clara das fases de negociação, automações de distribuição de leads, gatilhos de passagem de bastão e padronização para que nenhuma oportunidade seja esquecida no processo.
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Mapeamento do ciclo de vida do cliente e padronização cirúrgica de cada etapa do funil. Nenhum lead é esquecido e cada oportunidade avança por gatilhos automáticos bem definidos.
             </p>
+
+            <!-- Checklist Detalhada de Entregáveis -->
+            <div class="bg-slate-50/80 rounded-xl p-3 border border-slate-200/60 mb-4">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 block mb-2">Entregáveis específicos inclusos:</span>
+              <ul class="space-y-1.5 text-xs text-slate-700">
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Arquitetura de funis personalizados (Prospecção, Qualificação, Fechamento)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Automação de distribuição de leads em rodízio inteligente</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Configuração de alertas de tarefas, agendamentos e avisos de SLA</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Parametrização de motivos de perda e checklist de qualificação obrigatório</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="mt-5 pt-3.5 border-t border-slate-100 flex flex-wrap gap-1.5 text-xs font-semibold text-slate-500">
-            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Pipeline organizado</span>
-            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Automações de vendas</span>
+          <div class="mt-2 pt-3 border-t border-slate-100 flex flex-wrap gap-1.5 text-xs font-semibold text-slate-500">
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Pipeline blindado</span>
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Automação sem falhas</span>
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Padronização comercial</span>
           </div>
         </div>
 
@@ -642,18 +782,43 @@
               </span>
             </div>
 
-            <h3 class="text-lg font-extrabold text-dark-main tracking-tight mb-2">
+            <h3 class="text-lg font-extrabold text-dark-main tracking-tight mb-1">
               Mensalidade do dot.Sales
             </h3>
+            <p class="text-xs font-semibold text-lime-600 mb-2">Tecnologia Integrada & Licenciamento Completo</p>
 
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Licenciamento e infraestrutura completa da tecnologia dot.Sales já inclusos no plano. Plataforma central para gestão de clientes, histórico de conversas, controle de produtividade da equipe comercial e automações integradas sem surpresas na fatura.
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Acesso irrestrito à infraestrutura tecnológica do dot.Sales sem custos extras de implantação ou cobranças por usuário adicional. Sua equipe opera em um ambiente moderno, centralizado e seguro.
             </p>
+
+            <!-- Checklist Detalhada de Entregáveis -->
+            <div class="bg-slate-50/80 rounded-xl p-3 border border-slate-200/60 mb-4">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 block mb-2">Entregáveis específicos inclusos:</span>
+              <ul class="space-y-1.5 text-xs text-slate-700">
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Central de WhatsApp multiatendente oficial com número único corporativo</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Histórico completo de interações, áudios, textos e documentos arquivados</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Disparo de mensagens em massa segmentadas para bases qualificadas</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Monitor de produtividade de operadores em tempo real com relatórios</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="mt-5 pt-3.5 border-t border-slate-100 flex flex-wrap gap-1.5 text-xs font-semibold text-slate-500">
-            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Tecnologia inclusa</span>
-            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Sem taxas adicionais</span>
+          <div class="mt-2 pt-3 border-t border-slate-100 flex flex-wrap gap-1.5 text-xs font-semibold text-slate-500">
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Software 100% incluso</span>
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Multiusuário corporativo</span>
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Sem taxas ocultas</span>
           </div>
         </div>
 
@@ -672,21 +837,82 @@
               </span>
             </div>
 
-            <h3 class="text-lg font-extrabold text-dark-main tracking-tight mb-2">
+            <h3 class="text-lg font-extrabold text-dark-main tracking-tight mb-1">
               Acompanhamento em Tempo Real
             </h3>
+            <p class="text-xs font-semibold text-lime-600 mb-2">Business Intelligence & Governança de Metas</p>
 
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Visão clara e transparente de todos os números vitais da sua operação: volume de leads, custo de aquisição (CAC), taxas de conversão por etapa do funil e receita gerada, garantindo tomada de decisões ágil e embasada em dados.
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Transparência absoluta e governança sobre seus números de crescimento. Monitoramos os indicadores que realmente importam para que você saiba exatamente onde cada centavo investido está gerando retorno.
             </p>
+
+            <!-- Checklist Detalhada de Entregáveis -->
+            <div class="bg-slate-50/80 rounded-xl p-3 border border-slate-200/60 mb-4">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 block mb-2">Entregáveis específicos inclusos:</span>
+              <ul class="space-y-1.5 text-xs text-slate-700">
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Painel ao vivo 24/7 com métricas consolidadas de tráfego, CRM e vendas</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Controle contínuo de CAC (Custo por Aquisição), CPL e ticket médio</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Mapeamento de gargalos e taxas de passagem entre cada etapa do funil</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-emerald-600 font-bold shrink-0">✓</span>
+                  <span>Reuniões periódicas de alinhamento executivo com plano de ação de escala</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="mt-5 pt-3.5 border-t border-slate-100 flex flex-wrap gap-1.5 text-xs font-semibold text-slate-500">
+          <div class="mt-2 pt-3 border-t border-slate-100 flex flex-wrap gap-1.5 text-xs font-semibold text-slate-500">
             <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Transparência total</span>
-            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Decisão orientada a dados</span>
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">Decisão com dados</span>
+            <span class="bg-slate-50 px-2.5 py-0.5 rounded-lg border border-slate-200/60 text-[11px]">BI 24/7 ao vivo</span>
           </div>
         </div>
 
+      </div>
+
+      <!-- BANNER DE GARANTIAS OPERACIONAIS / ENTREGÁVEIS TRANSVERSAIS -->
+      <div class="mt-6 bg-gradient-to-r from-slate-900 via-dark-card to-slate-900 rounded-2xl p-6 sm:p-7 text-white border border-slate-800 shadow-sm">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-5">
+          <div class="max-w-xl">
+            <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-lime-brand/15 text-lime-brand border border-lime-brand/30 text-[11px] font-bold uppercase tracking-wider mb-2">
+              Incluso em Todos os Contratos
+            </div>
+            <h4 class="text-lg sm:text-xl font-bold tracking-tight text-white mb-1">
+              Garantias de Execução e Onboarding de Alta Velocidade
+            </h4>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Toda contratação conta com imersão inicial guiada, auditoria e homologação de segurança, canal direto de alinhamento e squads operacionais dedicados para garantir tração nos primeiros dias.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 shrink-0 text-xs">
+            <div class="bg-white/5 border border-white/10 rounded-xl p-3">
+              <span class="text-lime-brand font-black block text-sm mb-0.5">01. Setup Ágil</span>
+              <span class="text-slate-300 text-[11px]">Configuração completa e teste de ponta a ponta</span>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-3">
+              <span class="text-lime-brand font-black block text-sm mb-0.5">02. Canal Exclusivo</span>
+              <span class="text-slate-300 text-[11px]">Comunicação ágil sem burocracia</span>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-3">
+              <span class="text-lime-brand font-black block text-sm mb-0.5">03. Playbooks</span>
+              <span class="text-slate-300 text-[11px]">Processos validados e frameworks prontos</span>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-3">
+              <span class="text-lime-brand font-black block text-sm mb-0.5">04. Governança</span>
+              <span class="text-slate-300 text-[11px]">Prestação de contas e foco em ROI</span>
+            </div>
+          </div>
+        </div>
       </div>
 
     </section>
