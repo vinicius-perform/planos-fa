@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planos Comerciais | FAZENDO ACONTECER®</title>
+  <meta name="description" content="Escolha o plano ideal para acelerar seu crescimento com a FAZENDO ACONTECER®. Estrutura completa de marketing, CRM, tecnologia e estratégia comercial.">
+  
+  <!-- Favicon moderno com o símbolo solar convergente da FAZENDO ACONTECER -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' width='64' height='64'%3E%3Crect width='64' height='64' rx='8' fill='%23CEF52A'/%3E%3Cg stroke='%23FFFFFF' stroke-width='4.5' stroke-linecap='round'%3E%3Cline x1='32' y1='10' x2='32' y2='24'/%3E%3Cline x1='32' y1='40' x2='32' y2='54'/%3E%3Cline x1='10' y1='32' x2='24' y2='32'/%3E%3Cline x1='40' y1='32' x2='54' y2='32'/%3E%3Cline x1='16.5' y1='16.5' x2='26.5' y2='26.5'/%3E%3Cline x1='37.5' y1='37.5' x2='47.5' y2='47.5'/%3E%3Cline x1='47.5' y1='16.5' x2='37.5' y2='26.5'/%3E%3Cline x1='26.5' y1='37.5' x2='16.5' y2='47.5'/%3E%3C/g%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            lime: {
+              brand: '#CEF52A',       // Verde-lima oficial da Fazendo Acontecer
+              brandHover: '#BAE216',  // Hover sutilmente mais escuro
+              brandLight: '#F7FEE7',  // Fundo sutil de destaque
+              brandBorder: '#BDE81D', // Borda refinada
+              textContrast: '#0B0F17' // Texto de alto contraste sobre o verde-lima
+            },
+            dark: {
+              main: '#0B0F17',
+              card: '#111622',
+              muted: '#1E2538'
+            },
+            surface: {
+              light: '#F8FAFC',
+              border: '#E2E8F0',
+              subtle: '#F1F5F9'
+            }
+          },
+          boxShadow: {
+            'glow-lime': '0 0 35px -5px rgba(206, 245, 42, 0.40)',
+            'card-premium': '0 20px 40px -15px rgba(11, 15, 23, 0.08), 0 0 0 1px rgba(11, 15, 23, 0.05)',
+            'card-featured': '0 25px 50px -12px rgba(11, 15, 23, 0.16), 0 0 0 2px rgba(11, 15, 23, 0.9)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Estilos de acabamento fino e animações suaves */
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #F8FAFC;
+      color: #0F172A;
+    }
+
+    /* Padrão sutil de grid no fundo para estética tecnológica/growth */
+    .bg-grid-pattern {
+      background-image: radial-gradient(rgba(15, 23, 42, 0.07) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    /* Brilho ambiental suave decorativo */
+    .glow-blur {
+      filter: blur(120px);
+      pointer-events: none;
+    }
+
+    /* Suavidade nas transições */
+    .smooth-transition {
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between relative selection:bg-lime-brand selection:text-black">
+
+  <!-- Fundo com grid sutil e glow decorativo -->
+  <div class="fixed inset-0 bg-grid-pattern pointer-events-none opacity-60 z-0"></div>
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-lime-brand/15 glow-blur -z-10 rounded-full"></div>
+  <div class="fixed bottom-0 right-0 w-[500px] h-[300px] bg-slate-300/30 glow-blur -z-10 rounded-full"></div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <div class="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    
+    <!-- HEADER / CABEÇALHO DA MARCA -->
+    <header class="flex items-center justify-center pb-8 sm:pb-12 border-b border-slate-200/80 mb-10 sm:mb-14">
+      <!-- Logo Oficial FAZENDO ACONTECER -->
+      <a href="#" class="inline-block transition-transform hover:opacity-95 active:scale-[0.99]">
+        <img src="logo.png" alt="FAZENDO ACONTECER™" class="h-9 sm:h-12 w-auto object-contain max-w-[260px] sm:max-w-[340px]" />
+      </a>
+    </header>
+
+    <!-- SEÇÃO DOS PLANOS (2 CARDS) -->
+    <section id="planos" class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mb-12 sm:mb-16">
+
+      <!-- ======================================================== -->
+      <!-- CARD 1: PERFORMANCE (Plano de entrada)                   -->
+      <!-- ======================================================== -->
+      <div class="relative bg-white rounded-3xl p-7 sm:p-9 border border-slate-200/90 shadow-card-premium flex flex-col justify-between hover:border-slate-300 smooth-transition hover:-translate-y-1">
+        
+        <div>
+          <!-- Header do Card -->
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-bold tracking-wider uppercase text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
+              Plano de Entrada
+            </span>
+          </div>
+
+          <!-- Nome do Plano -->
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-dark-main tracking-tight mb-2">
+            Performance
+          </h3>
+
+          <!-- Microcopy Complementar abaixo do título/preço -->
+          <p class="text-sm text-slate-500 leading-relaxed mb-6">
+            Estrutura essencial para operação, marketing e acompanhamento.
+          </p>
+
+          <!-- Preço em Destaque -->
+          <div class="mb-7 pb-6 border-b border-slate-100">
+            <div class="flex items-baseline gap-1">
+              <span class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">R$</span>
+              <span class="text-4xl sm:text-5xl font-extrabold text-dark-main tracking-tight">4.488</span>
+              <span class="text-slate-500 font-medium text-sm sm:text-base ml-1">/mês</span>
+            </div>
+            
+            <!-- Destaque de contratação semestral em 6x no cartão -->
+            <p class="text-xs text-slate-500 font-medium mt-2">
+              Contratação semestral · em 6x no cartão
+            </p>
+          </div>
+
+          <!-- Botão CTA do Card 1 -->
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20avan%C3%A7ar%20com%20o%20plano%20Performance%20da%20Fazendo%20Acontecer."
+             target="_blank"
+             rel="noopener noreferrer"
+             class="w-full inline-flex items-center justify-center gap-2 py-4 px-6 rounded-2xl bg-dark-main text-white font-bold text-base hover:bg-slate-800 active:scale-[0.99] smooth-transition shadow-sm mb-8 group">
+            <span>Quero o Performance</span>
+            <svg class="w-4 h-4 text-lime-brand group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+
+          <!-- Lista: O que está incluso -->
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-700 mb-4 flex items-center gap-2">
+              <span>O que está incluso</span>
+              <span class="h-px bg-slate-200 flex-1"></span>
+            </h4>
+
+            <ul class="space-y-3.5">
+              <!-- Item 1 -->
+              <li class="flex items-start gap-3 text-sm text-slate-700 font-medium">
+                <span class="w-5 h-5 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5 text-slate-800">
+                  <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span>Tráfego Meta</span>
+              </li>
+
+              <!-- Item 2 -->
+              <li class="flex items-start gap-3 text-sm text-slate-700 font-medium">
+                <span class="w-5 h-5 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5 text-slate-800">
+                  <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span>Social media</span>
+              </li>
+
+              <!-- Item 3 -->
+              <li class="flex items-start gap-3 text-sm text-slate-700 font-medium">
+                <span class="w-5 h-5 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5 text-slate-800">
+                  <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span>Implementação de CRM</span>
+              </li>
+
+              <!-- Item 4 -->
+              <li class="flex items-start gap-3 text-sm text-slate-700 font-medium">
+                <span class="w-5 h-5 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5 text-slate-800">
+                  <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span>Mensalidade do dot.Sales</span>
+              </li>
+
+              <!-- Item 5 -->
+              <li class="flex items-start gap-3 text-sm text-slate-700 font-medium">
+                <span class="w-5 h-5 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5 text-slate-800">
+                  <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span>Acompanhamento dos dados em tempo real</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer do Card -->
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
+          <span>Onboarding guiado</span>
+          <span>Suporte ativo</span>
+        </div>
+
+      </div>
+
+
+      <!-- ======================================================== -->
+      <!-- CARD 2: EXCLUSIVO (Plano Premium e mais estratégico)     -->
+      <!-- ======================================================== -->
+      <div class="relative bg-white rounded-3xl p-7 sm:p-9 border-2 border-dark-main shadow-card-featured flex flex-col justify-between smooth-transition hover:-translate-y-1 group">
+        
+        <!-- SELO / BADGE DE DESTAQUE PREMIUM NO TOPO -->
+        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 z-20">
+          <span class="inline-flex items-center gap-1.5 bg-lime-brand text-black text-xs font-black uppercase tracking-wider py-1 px-4 rounded-full border border-dark-main shadow-sm">
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            Mais Completo & Estratégico
+          </span>
+        </div>
+
+        <div>
+          <!-- Header do Card -->
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-bold tracking-wider uppercase text-black bg-lime-brand/40 px-3 py-1 rounded-full border border-lime-brand/60">
+              Plano Premium
+            </span>
+          </div>
+
+          <!-- Nome do Plano -->
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-dark-main tracking-tight mb-2 flex items-center justify-between">
+            <span>Exclusivo</span>
+            <span class="text-xs font-semibold text-slate-500 bg-slate-100 py-0.5 px-2.5 rounded-full">Operação Full</span>
+          </h3>
+
+          <!-- Microcopy Complementar abaixo do preço/título -->
+          <p class="text-sm text-slate-500 leading-relaxed mb-6">
+            Operação mais robusta, com estrutura comercial ampliada e modelo premium.
+          </p>
+
+          <!-- Preço em Destaque + Variável -->
+          <div class="mb-7 pb-6 border-b border-slate-100 bg-slate-50/70 -mx-7 sm:-mx-9 px-7 sm:px-9 pt-5">
+            <div class="flex items-baseline gap-1">
+              <span class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">R$</span>
+              <span class="text-4xl sm:text-5xl font-extrabold text-dark-main tracking-tight">7.488</span>
+              <span class="text-slate-500 font-medium text-sm sm:text-base ml-1">/mês</span>
+            </div>
+
+            <!-- Destaque de contratação semestral em 6x no cartão -->
+            <p class="text-xs text-slate-600 font-medium mt-2">
+              Contratação semestral · em 6x no cartão
+            </p>
+
+            <div class="mt-2.5 flex items-center">
+              <!-- Informação adicional de variável elegante -->
+              <div class="inline-flex items-center gap-1.5 py-1 px-3 rounded-lg bg-white border border-slate-200/90 text-xs font-semibold text-slate-800 shadow-xs">
+                <span class="w-1.5 h-1.5 rounded-full bg-lime-brand ring-2 ring-lime-brand/50"></span>
+                <span>+ variável de 5%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botão CTA do Card 2 com Destaque Máximo -->
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20avan%C3%A7ar%20com%20o%20plano%20Exclusivo%20da%20Fazendo%20Acontecer."
+             target="_blank"
+             rel="noopener noreferrer"
+             class="w-full inline-flex items-center justify-center gap-2 py-4 px-6 rounded-2xl bg-lime-brand text-black font-extrabold text-base hover:bg-lime-brandHover active:scale-[0.99] smooth-transition shadow-glow-lime mb-8 group border border-black/10">
+            <span>Quero o Exclusivo</span>
+            <svg class="w-4 h-4 text-black group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+
+          <!-- Lista: O que está incluso -->
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-dark-main mb-4 flex items-center gap-2">
+              <span>O que está incluso</span>
+              <span class="h-px bg-slate-200 flex-1"></span>
+            </h4>
+
+            <ul class="space-y-3.5">
+              <!-- Item 1 -->
+              <li class="flex items-start gap-3 text-sm text-slate-800 font-medium">
+                <span class="w-5 h-5 rounded-full bg-lime-brand flex items-center justify-center shrink-0 mt-0.5 text-black shadow-xs">
+                  <svg class="w-3.5 h-3.5 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span>Tráfego Meta</span>
+              </li>
+
+              <!-- Item 2 (Diferencial Premium) -->
+              <li class="flex items-start gap-3 text-sm text-dark-main font-bold bg-lime-brand/10 p-2.5 rounded-xl border border-lime-brand/30 -mx-1">
+                <span class="w-5 h-5 rounded-full bg-lime-brand flex items-center justify-center shrink-0 mt-0.5 text-black shadow-xs">
+                  <svg class="w-3.5 h-3.5 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <div class="flex-1 flex items-center justify-between">
+                  <span>Comercial interno</span>
+                  <span class="text-[10px] uppercase font-extrabold tracking-wider bg-dark-main text-white px-2 py-0.5 rounded-md">Diferencial</span>
+                </div>
+              </li>
+
+              <!-- Item 3 -->
+              <li class="flex items-start gap-3 text-sm text-slate-800 font-medium">
+                <span class="w-5 h-5 rounded-full bg-lime-brand flex items-center justify-center shrink-0 mt-0.5 text-black shadow-xs">
+                  <svg class="w-3.5 h-3.5 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span>Social media</span>
+              </li>
+
+              <!-- Item 4 -->
+              <li class="flex items-start gap-3 text-sm text-slate-800 font-medium">
+                <span class="w-5 h-5 rounded-full bg-lime-brand flex items-center justify-center shrink-0 mt-0.5 text-black shadow-xs">
+                  <svg class="w-3.5 h-3.5 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span>Implementação de CRM</span>
+              </li>
+
+              <!-- Item 5 -->
+              <li class="flex items-start gap-3 text-sm text-slate-800 font-medium">
+                <span class="w-5 h-5 rounded-full bg-lime-brand flex items-center justify-center shrink-0 mt-0.5 text-black shadow-xs">
+                  <svg class="w-3.5 h-3.5 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span>Mensalidade do dot.Sales</span>
+              </li>
+
+              <!-- Item 6 -->
+              <li class="flex items-start gap-3 text-sm text-slate-800 font-medium">
+                <span class="w-5 h-5 rounded-full bg-lime-brand flex items-center justify-center shrink-0 mt-0.5 text-black shadow-xs">
+                  <svg class="w-3.5 h-3.5 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span>Acompanhamento dos dados em tempo real</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer do Card -->
+        <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-medium">
+          <span class="flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Prioridade máxima de escala
+          </span>
+          <span class="text-dark-main font-semibold">Equipe dedicada</span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SEÇÃO: DESCRITIVO DOS SERVIÇOS                           -->
+    <!-- ======================================================== -->
+    <section id="servicos" class="mt-14 sm:mt-20 mb-16 sm:mb-20">
+      
+      <!-- Cabeçalho da Seção de Serviços -->
+      <div class="mb-10 sm:mb-12">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 shadow-xs text-xs font-bold uppercase tracking-wider text-slate-800 mb-3.5">
+          <span class="w-2 h-2 rounded-full bg-lime-brand"></span>
+          Detalhamento do Escopo
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-dark-main tracking-tight leading-tight">
+          O que cada serviço entrega para sua operação
+        </h2>
+        <p class="text-sm sm:text-base text-slate-500 mt-2.5 max-w-2xl leading-relaxed">
+          Entenda a função e o impacto prático de cada frente na atração, estruturação e conversão de clientes para a sua empresa.
+        </p>
+      </div>
+
+      <!-- Grid com os 6 Serviços -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+
+        <!-- 1. Tráfego Meta -->
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-sm hover:shadow-md hover:border-slate-300 smooth-transition hover:-translate-y-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-2xl bg-dark-main flex items-center justify-center text-lime-brand shadow-xs">
+                <!-- Ícone Anúncios / Mira Comercial -->
+                <svg class="w-6 h-6 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3m0 12v3M3 12h3m12 0h3" />
+                </svg>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">
+                Em ambos os planos
+              </span>
+            </div>
+
+            <h3 class="text-xl font-extrabold text-dark-main tracking-tight mb-2.5">
+              Tráfego Meta
+            </h3>
+
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Gestão e otimização contínua de anúncios patrocinados no ecossistema Facebook e Instagram Ads. Criação de públicos compradores, testes dinâmicos de criativos e direcionamento de leads qualificados diretamente para a sua equipe de atendimento.
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-semibold text-slate-500">
+            <span class="bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200/60">Segmentação precisa</span>
+            <span class="bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200/60">Escala de ROI</span>
+          </div>
+        </div>
+
+        <!-- 2. Comercial Interno (Destaque Exclusivo) -->
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border-2 border-dark-main shadow-card-premium hover:shadow-card-featured smooth-transition hover:-translate-y-1 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-lime-brand/15 glow-blur rounded-full pointer-events-none"></div>
+
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-2xl bg-lime-brand flex items-center justify-center text-black shadow-xs">
+                <!-- Ícone Equipe de Vendas / Parceria -->
+                <svg class="w-6 h-6 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                </svg>
+              </div>
+              <span class="text-[11px] font-black uppercase tracking-wider text-black bg-lime-brand px-3 py-1 rounded-full border border-dark-main/15 shadow-2xs flex items-center gap-1">
+                ★ Exclusivo
+              </span>
+            </div>
+
+            <h3 class="text-xl font-extrabold text-dark-main tracking-tight mb-2.5 flex items-center justify-between">
+              <span>Comercial Interno</span>
+            </h3>
+
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Estrutura ativa e acompanhamento comercial dedicado para abordar, qualificar e fechar os leads gerados. Aplicação de roteiros validados (scripts), follow-up com alta velocidade de contato e foco na maximização da conversão em faturamento.
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-semibold text-slate-700">
+            <span class="bg-lime-brand/20 px-2.5 py-1 rounded-lg border border-lime-brand/50 text-black font-bold">Fechamento ativo</span>
+            <span class="bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200/60">Follow-up ágil</span>
+          </div>
+        </div>
+
+        <!-- 3. Social media -->
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-sm hover:shadow-md hover:border-slate-300 smooth-transition hover:-translate-y-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-2xl bg-dark-main flex items-center justify-center text-lime-brand shadow-xs">
+                <!-- Ícone Social / Compartilhar / Conteúdo -->
+                <svg class="w-6 h-6 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                </svg>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">
+                Em ambos os planos
+              </span>
+            </div>
+
+            <h3 class="text-xl font-extrabold text-dark-main tracking-tight mb-2.5">
+              Social media
+            </h3>
+
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Posicionamento e gestão da presença digital da marca nas redes sociais. Alinhamento de narrativas de conteúdo com o momento de compra dos clientes, fortalecimento de credibilidade e engajamento para amplificar os resultados de tráfego.
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-semibold text-slate-500">
+            <span class="bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200/60">Autoridade de marca</span>
+            <span class="bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200/60">Conteúdo estratégico</span>
+          </div>
+        </div>
+
+        <!-- 4. Implementação de CRM -->
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-sm hover:shadow-md hover:border-slate-300 smooth-transition hover:-translate-y-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-2xl bg-dark-main flex items-center justify-center text-lime-brand shadow-xs">
+                <!-- Ícone Funil / CRM / Processos -->
+                <svg class="w-6 h-6 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                </svg>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">
+                Em ambos os planos
+              </span>
+            </div>
+
+            <h3 class="text-xl font-extrabold text-dark-main tracking-tight mb-2.5">
+              Implementação de CRM
+            </h3>
+
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Organização arquitetada de todo o pipeline de vendas. Definição clara das fases de negociação, automações de distribuição de leads, gatilhos de passagem de bastão e padronização para que nenhuma oportunidade seja esquecida no processo.
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-semibold text-slate-500">
+            <span class="bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200/60">Pipeline organizado</span>
+            <span class="bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200/60">Automações de vendas</span>
+          </div>
+        </div>
+
+        <!-- 5. Mensalidade do dot.Sales -->
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-sm hover:shadow-md hover:border-slate-300 smooth-transition hover:-translate-y-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-2xl bg-dark-main flex items-center justify-center text-lime-brand shadow-xs">
+                <!-- Ícone Software / Raio / Tecnologia -->
+                <svg class="w-6 h-6 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                </svg>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">
+                Em ambos os planos
+              </span>
+            </div>
+
+            <h3 class="text-xl font-extrabold text-dark-main tracking-tight mb-2.5">
+              Mensalidade do dot.Sales
+            </h3>
+
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Licenciamento e infraestrutura completa da tecnologia dot.Sales já inclusos no plano. Plataforma central para gestão de clientes, histórico de conversas, controle de produtividade da equipe comercial e automações integradas sem surpresas na fatura.
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-semibold text-slate-500">
+            <span class="bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200/60">Tecnologia inclusa</span>
+            <span class="bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200/60">Sem taxas adicionais</span>
+          </div>
+        </div>
+
+        <!-- 6. Acompanhamento dos dados em tempo real -->
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-sm hover:shadow-md hover:border-slate-300 smooth-transition hover:-translate-y-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-2xl bg-dark-main flex items-center justify-center text-lime-brand shadow-xs">
+                <!-- Ícone Gráfico Analytics / Métricas em tempo real -->
+                <svg class="w-6 h-6 stroke-[2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">
+                Em ambos os planos
+              </span>
+            </div>
+
+            <h3 class="text-xl font-extrabold text-dark-main tracking-tight mb-2.5">
+              Acompanhamento em Tempo Real
+            </h3>
+
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Visão clara e transparente de todos os números vitais da sua operação: volume de leads, custo de aquisição (CAC), taxas de conversão por etapa do funil e receita gerada, garantindo tomada de decisões ágil e embasada em dados.
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-semibold text-slate-500">
+            <span class="bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200/60">Transparência total</span>
+            <span class="bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200/60">Decisão orientada a dados</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- RODAPÉ DISCRETO -->
+    <footer class="mt-8 pt-8 border-t border-slate-200/80 text-center sm:flex sm:items-center sm:justify-between text-xs text-slate-400">
+      <div class="flex items-center justify-center sm:justify-start gap-3 mb-3 sm:mb-0">
+        <img src="logo.png" alt="FAZENDO ACONTECER™" class="h-5 sm:h-6 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+        <span>•</span>
+        <span>Todos os direitos reservados.</span>
+      </div>
+      <div class="flex items-center justify-center gap-4 text-slate-400">
+        <span>Transparência comercial</span>
+        <span>•</span>
+        <span>Termos de serviço</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- SCRIPT DE CONFIGURAÇÃO E DINAMISMO DO WHATSAPP -->
+  <script>
+    /**
+     * CONFIGURAÇÃO CENTRAL DE CONTATO (FAZENDO ACONTECER®)
+     * 
+     * Para alterar o número de atendimento, basta alterar a variável DEFAULT_PHONE abaixo
+     * ou passar como parâmetro na URL: ?phone=5511999999999
+     */
+    const DEFAULT_PHONE = "5511999999999"; // Substitua pelo WhatsApp comercial real da FA
+
+    (function setupContactLinks() {
+      // Verifica se existe telefone passado na URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const activePhone = urlParams.get('phone') || DEFAULT_PHONE;
+
+      // Mensagens pré-definidas para cada ação comercial
+      const messages = {
+        performance: "Olá! Gostaria de avançar com o plano Performance da Fazendo Acontecer.",
+        exclusivo: "Olá! Gostaria de avançar com o plano Exclusivo da Fazendo Acontecer.",
+        especialista: "Olá! Gostaria de falar com um especialista da Fazendo Acontecer para entender o plano ideal para minha operação."
+      };
+
+      // Atualiza links se o telefone for diferente do padrão ou se foram adicionados data-attributes
+      const links = document.querySelectorAll('a[href*="wa.me"]');
+      links.forEach((link, index) => {
+        let msg = messages.especialista;
+        if (link.textContent.includes('Performance')) msg = messages.performance;
+        else if (link.textContent.includes('Exclusivo')) msg = messages.exclusivo;
+
+        link.href = `https://wa.me/${activePhone}?text=${encodeURIComponent(msg)}`;
+      });
+    })();
+  </script>
+
+</body>
+</html>

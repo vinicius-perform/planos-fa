@@ -1,0 +1,11 @@
+{
+  "name": "precos-fazendo-acontecer",
+  "version": "1.0.0",
+  "description": "Landing page de planos comerciais para a FAZENDO ACONTECER®",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "FAZENDO ACONTECER®",
+  "license": "ISC"
+}
