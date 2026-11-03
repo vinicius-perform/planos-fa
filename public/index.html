@@ -138,11 +138,9 @@
             </p>
           </div>
 
-          <!-- Botão CTA do Card 1 -->
-          <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20avan%C3%A7ar%20com%20o%20plano%20Performance%20da%20Fazendo%20Acontecer."
-             target="_blank"
-             rel="noopener noreferrer"
-             class="w-full inline-flex items-center justify-center gap-2 py-4 px-6 rounded-2xl bg-dark-main text-white font-bold text-base hover:bg-slate-800 active:scale-[0.99] smooth-transition shadow-sm mb-8 group">
+          <!-- Botão CTA do Card 1 (Link fictício) -->
+          <a href="#" onclick="return false;"
+             class="w-full inline-flex items-center justify-center gap-2 py-4 px-6 rounded-2xl bg-dark-main text-white font-bold text-base hover:bg-slate-800 active:scale-[0.99] smooth-transition shadow-sm mb-8 group cursor-pointer">
             <span>Quero o Performance</span>
             <svg class="w-4 h-4 text-lime-brand group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -275,11 +273,9 @@
             </div>
           </div>
 
-          <!-- Botão CTA do Card 2 com Destaque Máximo -->
-          <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20avan%C3%A7ar%20com%20o%20plano%20Exclusivo%20da%20Fazendo%20Acontecer."
-             target="_blank"
-             rel="noopener noreferrer"
-             class="w-full inline-flex items-center justify-center gap-2 py-4 px-6 rounded-2xl bg-lime-brand text-black font-extrabold text-base hover:bg-lime-brandHover active:scale-[0.99] smooth-transition shadow-glow-lime mb-8 group border border-black/10">
+          <!-- Botão CTA do Card 2 com Destaque Máximo (Link fictício) -->
+          <a href="#" onclick="return false;"
+             class="w-full inline-flex items-center justify-center gap-2 py-4 px-6 rounded-2xl bg-lime-brand text-black font-extrabold text-base hover:bg-lime-brandHover active:scale-[0.99] smooth-transition shadow-glow-lime mb-8 group border border-black/10 cursor-pointer">
             <span>Quero o Exclusivo</span>
             <svg class="w-4 h-4 text-black group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -597,40 +593,6 @@
     </footer>
 
   </div>
-
-  <!-- SCRIPT DE CONFIGURAÇÃO E DINAMISMO DO WHATSAPP -->
-  <script>
-    /**
-     * CONFIGURAÇÃO CENTRAL DE CONTATO (FAZENDO ACONTECER®)
-     * 
-     * Para alterar o número de atendimento, basta alterar a variável DEFAULT_PHONE abaixo
-     * ou passar como parâmetro na URL: ?phone=5511999999999
-     */
-    const DEFAULT_PHONE = "5511999999999"; // Substitua pelo WhatsApp comercial real da FA
-
-    (function setupContactLinks() {
-      // Verifica se existe telefone passado na URL
-      const urlParams = new URLSearchParams(window.location.search);
-      const activePhone = urlParams.get('phone') || DEFAULT_PHONE;
-
-      // Mensagens pré-definidas para cada ação comercial
-      const messages = {
-        performance: "Olá! Gostaria de avançar com o plano Performance da Fazendo Acontecer.",
-        exclusivo: "Olá! Gostaria de avançar com o plano Exclusivo da Fazendo Acontecer.",
-        especialista: "Olá! Gostaria de falar com um especialista da Fazendo Acontecer para entender o plano ideal para minha operação."
-      };
-
-      // Atualiza links se o telefone for diferente do padrão ou se foram adicionados data-attributes
-      const links = document.querySelectorAll('a[href*="wa.me"]');
-      links.forEach((link, index) => {
-        let msg = messages.especialista;
-        if (link.textContent.includes('Performance')) msg = messages.performance;
-        else if (link.textContent.includes('Exclusivo')) msg = messages.exclusivo;
-
-        link.href = `https://wa.me/${activePhone}?text=${encodeURIComponent(msg)}`;
-      });
-    })();
-  </script>
 
 </body>
 </html>
